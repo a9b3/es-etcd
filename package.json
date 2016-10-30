@@ -21,5 +21,9 @@
   "dependencies": {
     "axios": "^0.15.2",
     "invariant": "^2.2.1"
-  }
+  },
+  "keywords": [
+    "etcd",
+    "etcd-client"
+  ]
 }
