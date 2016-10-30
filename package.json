@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "build/index.js",
   "license": "MIT",
+  "description": "Simple etcd client with tls support",
+  "author": "Sam Lau <esayemm@gmail.com>",
   "scripts": {
     "build": "rm -rf build && babel src --out-dir build"
   },
