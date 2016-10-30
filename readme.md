@@ -2,6 +2,12 @@
 
 A simple etcd node client with tls support.
 
+```
+npm i --save etcd-client
+```
+
+Example Usage
+
 ```js
 import EtcdClient from 'etcd-client'
 
@@ -24,9 +30,7 @@ main()
 .catch(e => console.error(e))
 ```
 
-## Usage
-
-### Constructor
+## Constructor
 
 fields|description
 ---|---
