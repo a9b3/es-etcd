@@ -50,7 +50,7 @@ function instantiateAxiosInstance(_ref) {
  * https://coreos.com/etcd/docs/latest/v2/api.html
  */
 
-var EtcdClient = function () {
+var EsEtcd = function () {
 
   /*
    * opts: {
@@ -64,8 +64,8 @@ var EtcdClient = function () {
    *   },
    * }
    */
-  function EtcdClient(args) {
-    _classCallCheck(this, EtcdClient);
+  function EsEtcd(args) {
+    _classCallCheck(this, EsEtcd);
 
     this._scheme = null;
     this._host = null;
@@ -86,7 +86,7 @@ var EtcdClient = function () {
    */
 
 
-  _createClass(EtcdClient, [{
+  _createClass(EsEtcd, [{
     key: 'configure',
     value: function configure(_ref2) {
       var scheme = _ref2.scheme,
@@ -473,7 +473,7 @@ var EtcdClient = function () {
     }()
   }]);
 
-  return EtcdClient;
+  return EsEtcd;
 }();
 
-exports.default = EtcdClient;
+exports.default = EsEtcd;
