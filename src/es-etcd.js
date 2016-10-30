@@ -145,7 +145,7 @@ export default class EsEtcd {
     }
   }
 
-  async watch(key, cb) {
+  watch(key, cb) {
     let cancel = () => {}
     this._watch(key, cb, c => cancel = c)
     return () => cancel()
