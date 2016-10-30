@@ -1,18 +1,18 @@
-# etcd-client
+# es-etcd
 
 A simple etcd node client with tls support.
 
 ```
-npm i --save etcd-client
+npm i --save es-etcd
 ```
 
 Example Usage
 
 ```js
-import EtcdClient from 'etcd-client'
+import EsEtcd from 'es-etcd'
 
 async function main() {
-	const etcdClient = new EtcdClient({
+	const esEtcd = new EsEtcd({
 		scheme: 'https',
 		host: '0.0.0.0',
 		port: 2379,
@@ -22,8 +22,8 @@ async function main() {
 			cert: fs.readFileSync('./etcd.crt'),
 		},
 	})
-	
-	console.log(await etcdClient.version())
+
+	console.log(await esEtcd.version())
 }
 
 main()
@@ -40,7 +40,7 @@ port| Port of etcd server
 agentOpts| `{ ca, key, cert }` use fs.readFileSync for these fields
 
 ```js
-const etcdClient = new EtcdClient({
+const esEtcd = new EsEtcd({
 	scheme: 'https',
 	host: '0.0.0.0',
 	port: 2379,
@@ -60,7 +60,7 @@ const etcdClient = new EtcdClient({
 - opts - `{ recursive: true }`
 
 ```js
-await etcdClient.get('foo', { recursive: true })
+await esEtcd.get('foo', { recursive: true })
 ```
 
 ### `set`

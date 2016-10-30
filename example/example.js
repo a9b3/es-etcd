@@ -1,15 +1,15 @@
-import EtcdClient from '../src/index.js'
+import EsEtcd from '../src/index.js'
 
 async function main() {
-  const etcdClient = new EtcdClient({
+  const esEtcd = new EsEtcd({
     scheme: 'http',
     host: '127.0.0.1',
     port: 2379,
   })
 
-  console.log(await etcdClient.version())
-  console.log(await etcdClient.statsLeader())
-  console.log(await etcdClient.statsSelf())
+  console.log(await esEtcd.version())
+  console.log(await esEtcd.statsLeader())
+  console.log(await esEtcd.statsSelf())
 }
 
 main()

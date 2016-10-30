@@ -1,2 +1,2 @@
-import EtcdClient from './etcd-client.js'
-export default EtcdClient
+import EsEtcd from './es-etcd.js'
+export default EsEtcd

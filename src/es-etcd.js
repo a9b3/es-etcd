@@ -25,7 +25,7 @@ function instantiateAxiosInstance({ agentOpts, opts }) {
 /*
  * https://coreos.com/etcd/docs/latest/v2/api.html
  */
-export default class EtcdClient {
+export default class EsEtcd {
   _scheme = null
   _host = null
   _port = null
