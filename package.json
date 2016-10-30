@@ -6,6 +6,8 @@
   "description": "Simple etcd client with tls support",
   "author": "Sam Lau <esayemm@gmail.com>",
   "scripts": {
+    "version": "npm run build && git add .",
+    "postversion": "git push && git push --tags && npm publish",
     "build": "rm -rf build && babel src --out-dir build"
   },
   "devDependencies": {
